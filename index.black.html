@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="manifest" href="manifest.webmanifest">
     <title>福来了</title>
     <style>
       html, body {
@@ -186,25 +187,9 @@
     </svg>
 
     <script>
-      function toggleFullScreen() {
-        var doc = window.document;
-        var docEl = doc.documentElement;
-
-        var requestFullScreen = docEl.requestFullscreen || docEl.mozRequestFullScreen || docEl.webkitRequestFullScreen || docEl.msRequestFullscreen;
-        var cancelFullScreen = doc.exitFullscreen || doc.mozCancelFullScreen || doc.webkitExitFullscreen || doc.msExitFullscreen;
-
-        if(!doc.fullscreenElement && !doc.mozFullScreenElement && !doc.webkitFullscreenElement && !doc.msFullscreenElement) {
-          requestFullScreen.call(docEl);
-        }
-        else {
-          cancelFullScreen.call(doc);
-        }
-      }
-      
       setTimeout(() => {
         if(!isShow) {
           show()
-          toggleFullScreen()
         }
       }, 2000);
       var svg = document.querySelector('svg')
