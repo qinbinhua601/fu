@@ -186,6 +186,11 @@
     </svg>
 
     <script>
+      setTimeout(() => {
+        if(!isShow) {
+          show()
+        }
+      }, 2000);
       var svg = document.querySelector('svg')
       var isShow = false
       function show() {
