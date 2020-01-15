@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>svg demo</title>
     <style>
+      html, body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color:red;
+        height: 100%;
+        width: 100%;
+      }
       svg {
         background-color: red;
       }
@@ -186,6 +195,15 @@
       function hide() {
         svg.classList.remove('start')
       }
+      document.body.addEventListener('click', () => {
+        console.log('asdfasdf')
+        if (isShow) {
+            hide()
+          } else {
+            show()
+          }
+          isShow = !isShow
+      })
       document.addEventListener('keyup', ({ keyCode }) => {
         if (keyCode === 32 || keyCode === 13) {
           if (isShow) {
