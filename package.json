@@ -1,0 +1,23 @@
+{
+  "name": "svg-demo",
+  "version": "1.0.0",
+  "description": "## 福字动画特效",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "parcel build index.black.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinbinhua601/fu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qinbinhua601/fu/issues"
+  },
+  "homepage": "https://github.com/qinbinhua601/fu#readme",
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
